@@ -10,6 +10,12 @@ local functions = require('cmp_twig.functions')
 for line in result:gmatch("[^\r\n]+") do
   local is_filter = line:match("TwigFilter") ~= nil
   local match = line:match("new Twig[A-Za-z]+%('([A-Za-z0-9_]+)'")
+
+  if is_filter then
+    table.insert(filters, match)
+  else
+    table.insert(functions, match)
+  end
 end
 
 function source.new()
