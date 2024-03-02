@@ -1,4 +1,4 @@
-# cmp-twig-routes
+# cmp-twig
 
 [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) source for twig.  
 This plugin autocompletes twig filters and functions located in 
@@ -10,6 +10,8 @@ Filters:
 
 Functions:  
 ![Autocomplete](./docs/functions.png)
+
+Filters and functions are refreshed every 30 seconds.
 
 ## Prerequisites
 - [ripgrep](https://github.com/BurntSushi/ripgrep) to search for 
@@ -38,6 +40,5 @@ There is no configuration at the moment.
 
 ## Todo
 
-- Refresh sources
 - Configure filetypes
 - Configure filters and functions location
