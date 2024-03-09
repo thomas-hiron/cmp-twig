@@ -6,7 +6,7 @@ local filters = {}
 local functions = {}
 
 local function load_twig()
-  local handle = io.popen('rg --no-filename --no-line-number --no-heading "new Twig(Filter|Function)" src')
+  local handle = io.popen('rg --no-filename --no-line-number --no-heading --no-messages "new Twig(Filter|Function)" src')
   local result = handle:read("*a")
   handle:close()
 
